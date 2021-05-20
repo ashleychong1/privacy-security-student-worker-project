@@ -1,7 +1,3 @@
-# Netlify link (Ashley Chong)
-
-https://dreamy-sammet-20787d.netlify.app
-
 # Getting started
 
 Please see [Issue #1](https://github.com/mozilla/privacy-security-student-worker-project/issues/1) for more information on this exercise. 
@@ -24,3 +20,7 @@ $ npm install
 ```
 $ npm run dev
 ```
+
+## Netlify link (Ashley Chong)
+
+https://dreamy-sammet-20787d.netlify.app
