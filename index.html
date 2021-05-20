@@ -13,7 +13,128 @@
 
 <body>
     <!-- Put HTML Here -->
+    <!-- Header Section -->
+    <header>
+        <div class="font-metropolis header__container">
+            <a href="#home"><img id="header__logo" src="assets/img/logo-relay.png">
+            <div class="header__toggle" id="mobile-menu"> 
+                <div id="mobile-menu-container">
+                    <button onclick="openMenu" id="mobile-menu-text">Menu</button>
+                    <div class="arrow-down" id="mobile-arrow" onclick="this.classList.toggle('active')"></div>
+                </div>
+                <div id="mobile-home-container">
+                    <a class="mobile-home-text" href="#home">Home</a>
+                </div>
+                <div class="mobile-faq-container">
+                    <a class="mobile-faq-text" href="#faq">FAQ</a>
+                </div>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span> 
+            </div>
+            <ul class="header__links">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+                <li>
+                    <button class="header__icons"><img id="grid" src="assets/img/grid_menu_icon.png"></button>
+                </li>
+                <li>
+                    <button class="header__icons"><img id="profile" src="assets/img/profile_picture.png"></button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Body Section -->
+    <main>
+            <div class="mainbody__title">
+                <div class="mainbody__titlecontainer">
+                    <h2 class="font-metropolis" id="manage">Manage your Relay aliases</h2>
+                    <p class="font-inter" id="remaining"><b>4</b> remaining aliases</p>
+                </div>
+            </div>
+            <div class="generate__container">
+                <button class="font-metropolis generate">+ Generate New Alias</button>
+            </div>
+            <div class="mobile-remaining__container">
+                <p class="font-inter" id="mobile-remaining"><b>4</b> remaining aliases</p>
+            </div>
+            <div class="mainbody__accountoptions">
+                    <div class="add-account">
+                        <p class="font-metropolis" id="add-account-text">Add account name</p>
+                        <img id="pencil" src="assets/img/pencil_icon.png">
+                    </div>
+                    <div class="forwarding">
+                        <p class="font-metropolis" id="forwarding-text">forwarding</p>
+                        <input type="checkbox" id="toggle" class="checkbox"/>
+                            <label for="toggle" class="switch"></label>
+                    </div>
+            </div>
+            <div class="mainbody__accountlist">
+                <div class="mainbody__accountlistcontainer">
+                    <div class="mainbody__accountlisttop">
+                        <div class="email">
+                            <p class="font-inter email-text"><b>sw4wo4v1s@relay.firefox.com</b></p>
+                            <img id="pages" src="assets/img/pages_icon.png">
+                        </div>
+                        <ul class="num-blocked-forwarded">
+                            <li>
+                                <p class="font-inter" id="num-blocked">0</p>
+                            </li>
+                            <li>
+                                <p class="font-inter" id="num-forwarded">0</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mainbody__accountlistbottom">
+                        <div class="show-details">
+                            <p class="font-metropolis show-details-text">Show Details</p>
+                            <div class="arrow-down" onclick="this.classList.toggle('active')"></div>
+                        </div>
+                        <ul class="blocked-forwarded">
+                            <li>
+                                <p class="font-inter" id="blocked-text">Blocked</p>
+                            </li>
+                            <li>
+                                <p class="font-inter" id="forwarded-text">Forwarded</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mainbody__paragraph">
+                <p class="font-inter">Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size</p>
+            </div>
+    </main>
     
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="font-metropolis footer__container">
+            <a href="#mozilla"><img id="footer__logo" src="assets/img/logo-mozilla.svg">
+            <ul class="footer__links">
+                <li>
+                    <a href="#privacy">Privacy</a>
+                </li>
+                <li>
+                    <a href="#relay-terms">Relay Terms</a>
+                </li>
+                <li>
+                    <a href="#legal">Legal</a>
+                </li>
+                <li>
+                    <button class="footer__icons"><img id="github__logo" src="assets/img/logo-github.png"></button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
     <!-- 
         Font Awesome v5 Free - See https://fontawesome.com/start for more info
         Example usage: <i class="fas fa-toggle-off"></i>
